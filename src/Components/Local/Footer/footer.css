@@ -1,0 +1,205 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+  background: url(/Photos/Home\ Photos/background.png);
+  margin-top: 100px;
+  position: relative;
+  row-gap: 30px;
+}
+
+/* توزيع الأعمدة */
+.footer > div {
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+/* ================= Data ================= */
+
+.footer .data {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: var(--z-index-3);
+}
+
+.footer .data img {
+  width: 300px;
+  transform: translate(-60px, -25px);
+}
+
+.footer .data p {
+  font-size: var(--p-size);
+  color: var(--default-color);
+  line-height: 1.6;
+}
+
+.footer .data .contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer .data .contact span {
+  display: inline-flex;
+  padding: 12px;
+  color: var(--white);
+  background-color: var(--hover-color);
+  border-radius: 50%;
+}
+
+.footer .data .contact .text p {
+  margin: 0;
+}
+
+.footer .data .contact .text p:first-child {
+  color: var(--hover-color);
+}
+
+.footer .data .contact .text p:last-child {
+  font-weight: var(--h5-weight);
+  color: var(--main-color);
+}
+
+/* ================= Links & Services ================= */
+
+.footer .links,
+.footer .service {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: var(--z-index-3);
+}
+
+.footer .links h3,
+.footer .service h3 {
+  font-size: var(--h3-size);
+  color: var(--main-color);
+  position: relative;
+}
+
+.footer .links h3::before,
+.footer .service h3::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--main-color);
+}
+
+.footer .link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer .link a {
+  font-size: var(--a-size);
+  text-decoration: none;
+  color: var(--default-color);
+  transition: 0.3s;
+}
+
+.footer .link a:hover {
+  color: var(--main-color);
+}
+
+/* ================= Social ================= */
+
+.footer .social {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  z-index: var(--z-index-3);
+}
+
+.footer .social span {
+  display: flex;
+  font-size: var(--a-size);
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Facebook */
+.footer .social .face {
+  background-color: blue;
+  color: white;
+}
+
+/* Twitter */
+.footer .social .twit {
+  background-color: #72c6ef;
+  color: white;
+}
+
+/* LinkedIn */
+.footer .social .linked {
+  background-color: #3e5aa8;
+  color: white;
+}
+
+.footer .social span:hover {
+  transform: scale(1.1);
+}
+
+/* ================= Copy Right ================= */
+
+.footer .copy-right {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: var(--p-size);
+  z-index: var(--z-index-3);
+}
+
+.footer .copy-right span {
+  color: var(--hover-color);
+}
+
+/* ================= Responsive ================= */
+
+@media (max-width: 650px) {
+  .footer {
+    padding: 30px 20px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer > div {
+    width: 100%;
+    flex-basis: content;
+  }
+
+  .footer .data img {
+    transform: translate(-20px, -10px);
+  }
+
+  .footer .links h3::before,
+  .footer .service h3::before {
+    left: 100px;
+    width: 20%;
+  }
+
+  .footer .social {
+    justify-content: center;
+    align-items: start;
+    height: 100px;
+  }
+  .footer .data .contact {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 325px) {
+  .footer .data .contact .text p:last-child {
+    font-weight: var(--h7-weight);
+  }
+}

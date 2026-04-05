@@ -1,0 +1,198 @@
+/* ============================= */
+/* Hero Section */
+.hero {
+  background: url("../../../public/Photos/Home\ Photos/background.png")
+    center/cover no-repeat;
+  min-height: 60vh;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-text {
+  position: relative;
+  color: var(--main-color);
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: var(--h2-weight);
+}
+
+.hero-text p {
+  font-size: var(--p-size);
+  font-weight: var(--p-weight);
+  margin-bottom: 30px;
+}
+
+.hero-text button {
+  background-color: var(--hover-color);
+  color: var(--white);
+  border: 1px solid var(--hover-color);
+  padding: 12px 25px;
+  font-size: var(--p-size);
+  font-weight: var(--p-weight);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition-middle);
+}
+
+.hero-text button:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+/* ============================= */
+/* Doctors Section */
+.doctors-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.doctors-section h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: var(--main-color);
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+}
+
+.doctors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.doctor-card {
+  width: 400px;
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid var(--default-color);
+  overflow: hidden;
+  transition:
+    var(--transition-middle),
+    box-shadow var(--transition-middle),
+    border var(--transition-middle);
+  cursor: pointer;
+}
+
+.doctor-card:hover {
+  border: 1px solid transparent;
+  box-shadow: var(--box-shadow-large);
+}
+
+.doctor-card .img-box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doctor-card .img-box img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.doctor-card .img-box::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid var(--low-hover-color);
+  /* ✨ أهم سطرين */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.doctor-card .img-box::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--low-default-color);
+  /* ✨ أهم سطرين */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.doctor-card:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  width: 100%;
+  padding: 20px;
+  transition: var(--transition-middle);
+  text-align: center;
+}
+
+.overlay h3 {
+  margin-top: 10px;
+  font-size: var(--h4-size);
+  font-weight: var(--p-weight);
+  color: var(--main-color);
+}
+
+.overlay p {
+  margin: 5px 0;
+  font-size: var(--p-size);
+  font-weight: var(--p-weight);
+  color: var(--hover-color);
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  font-size: var(--a-size);
+  color: var(--white);
+  background-color: var(--default-color);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--default-color);
+  transition: var(--transition-middle);
+}
+
+.social-icons a:hover {
+  background-color: transparent;
+  color: var(--default-color);
+}
+
+/* Responsive  */
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: var(--h1-size);
+    font-weight: var(--h7-weight);
+  }
+  .hero p,
+  .hero button {
+    font-size: var(--h7-size);
+    font-weight: var(--h7-weight);
+  }
+  .doctors-section h2 {
+    font-size: var(--h1-size);
+    font-weight: var(--h7-weight);
+  }
+}

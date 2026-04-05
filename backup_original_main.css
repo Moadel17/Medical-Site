@@ -1,0 +1,134 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 100px;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../../public/Photos/Home\ Photos/background.png);
+  background-size: cover;
+}
+
+.main .icon-float .image-5 {
+  position: absolute;
+  left: 800px;
+  top: 30px;
+}
+
+.main .icon-float .image-6 {
+  position: absolute;
+  left: 600px;
+  top: 250px;
+}
+
+/* Main Left  */
+.main .main-left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+  z-index: var(--z-index-2);
+}
+
+.main .main-left h5 {
+  background-color: var(--low-default-color);
+  color: var(--default-color);
+  width: fit-content;
+  padding: 5px 10px;
+  font-size: var(--h5-size);
+}
+
+.main .main-left h2 {
+  font-size: var(--h2-size);
+  font-weight: var(--h3-weight);
+  color: #1f2278;
+  margin: 25px 0 50px;
+}
+
+.main .main-left button {
+  font-size: var(--p-size);
+  font-weight: var(--p-weight);
+  width: 200px;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--low-hover-color);
+  color: var(--hover-color);
+  transition: var(--transition-slow);
+}
+
+.main .main-left button:hover {
+  background-color: var(--hover-color);
+  color: var(--low-hover-color);
+}
+
+/* Main Right   */
+.main .main-right {
+  width: 50%;
+  text-align: center;
+  z-index: var(--z-index-2);
+}
+
+.main .main-right img {
+  width: 80%;
+  animation: move 3s alternate linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Responsive  */
+
+@media (max-width: 1052px) {
+  .main {
+    padding: 0 50px;
+  }
+  .main .main-left h5 {
+    font-size: var(--h6-size);
+  }
+  .main .main-right img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .main {
+    padding: 0 50px;
+  }
+  .main .main-left h5 {
+    font-size: var(--h7-size);
+  }
+  .main .main-left h2 {
+    font-size: var(--h3-size);
+  }
+  .main .main-right img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 670px) {
+  .main {
+    flex-direction: column;
+    height: 100%;
+  }
+  .main .main-left {
+    order: 2;
+    width: 100%;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .main .main-left h2 {
+    text-align: center;
+  }
+  .main .main-right {
+    width: 100%;
+    margin-top: 50px;
+  }
+}

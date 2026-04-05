@@ -1,0 +1,352 @@
+.service {
+  width: 100%;
+  height: 100%;
+}
+
+.service .label-head {
+  font-size: var(--p-size);
+  font-weight: var(--p-weight);
+  background-color: var(--low-hover-color);
+  width: fit-content;
+  margin: 40px auto 20px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: var(--hover-color);
+}
+
+.service h2 {
+  color: var(--main-color);
+  width: fit-content;
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+  margin: 10px auto 40px;
+}
+
+/* SERV  */
+
+.service .serv {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 50px;
+  gap: 40px;
+  background-color: var(--bg-color);
+}
+
+.service .serv .card {
+  width: 350px;
+  min-height: 400px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow-large);
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(2px);
+  }
+  20% {
+    transform: translateX(-2px);
+  }
+  40% {
+    transform: translateX(2px);
+  }
+  60% {
+    transform: translateX(-2px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.service .serv .card:hover span svg {
+  animation: move 0.2s;
+}
+
+.service .serv .card span {
+  border: 2px solid var(--low-default-color);
+  border-radius: 20px;
+  width: fit-content;
+  padding: 20px 30px;
+  font-size: var(--h1-size);
+  color: var(--main-color);
+}
+
+.service .serv .card h4 {
+  color: var(--main-color);
+  font-size: var(--h2-size);
+  font-weight: var(--h6-weight);
+  margin: 20px 0;
+}
+
+.service .serv .card p {
+  color: var(--black);
+}
+
+.service .serv .card button {
+  width: 150px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin-top: 20px;
+  background-color: var(--low-default-color);
+  color: var(--main-color);
+  transition: var(--transition-middle);
+}
+
+.service .serv .card button:hover {
+  background-color: var(--default-color);
+  color: var(--white);
+}
+
+/* INFO  */
+
+.service .info {
+  width: 100%;
+  background-color: var(--low-default-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 80px;
+  margin: 100px 0;
+}
+
+.service .info .card {
+  width: 250px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 30px 15px;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow-large);
+  position: relative;
+  transition: var(--transition-slow);
+}
+
+.service .info .card:hover {
+  background-color: var(--default-color);
+  color: var(--white);
+}
+
+.service .info .card:hover h4,
+.service .info .card:hover h4 span {
+  color: var(--white);
+}
+
+.service .info .card::before {
+  content: "";
+  border: 2px solid var(--main-color);
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.service .info .card h4 {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--h1-size);
+  font-weight: var(--h6-weight);
+  color: var(--hover-color);
+}
+
+.service .info .card h4 span {
+  margin: 5px;
+  font-size: var(--h3-size);
+  font-weight: var(--h6-weight);
+  color: var(--main-color);
+}
+
+/* NEWS  */
+
+.news {
+  width: 100%;
+}
+
+.news .label-head {
+  font-size: var(--p-size);
+  font-weight: var(--p-weight);
+  background-color: var(--low-hover-color);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: var(--hover-color);
+}
+
+.news h2 {
+  color: var(--main-color);
+  width: fit-content;
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+  margin: 10px auto 20px;
+}
+
+/* CARDS  */
+
+.news .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+  padding: 30px 75px;
+  overflow: hidden;
+}
+
+.news .cards .card {
+  width: 400px;
+  min-height: 520px;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: var(--transition-slow);
+}
+
+.news .cards .card:hover {
+  box-shadow: var(--box-shadow-large);
+}
+
+.news .cards .card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Profile  */
+/* Img  */
+
+.news .cards .card .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  margin-top: 15px;
+  color: var(--hover-color);
+}
+
+.news .cards .card .profile .img {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.news .cards .card .profile .img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.news .cards .card .profile .img p {
+  font-size: var(--p-size);
+  font-weight: var(--p-weight);
+  margin-top: 5px;
+}
+
+/* Date  */
+
+.news .cards .card .profile .date {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.news .cards .card .profile .date svg {
+  font-size: var(--h4-size);
+}
+
+.news .cards .card .profile .date p {
+  font-size: var(--p-size);
+  font-weight: var(--p-weight);
+  margin-top: 2px;
+}
+
+/* Profile  */
+
+.news .cards .card h5 {
+  font-size: var(--h4-size);
+  font-weight: var(--h6-weight);
+  color: var(--main-color);
+  margin: 10px 0 20px;
+}
+
+.news .cards .card button {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 5px 10px;
+  font-size: var(--p-size);
+  font-weight: var(--p-weight);
+  border: 2px solid var(--default-color);
+  border-radius: 10px;
+  color: var(--default-color);
+  background-color: transparent;
+  gap: 20px;
+  transition: var(--transition-middle);
+}
+
+.news .cards .card button:hover {
+  background-color: var(--default-color);
+  color: var(--white);
+}
+
+.news .cards .card button span {
+  padding: 5px 10px;
+  font-size: var(--p-size);
+  font-weight: var(--h1-weight);
+  color: var(--white);
+  background-color: var(--default-color);
+  border-radius: 10px;
+}
+
+/* Responsive  */
+
+@media (max-width: 550px) {
+  .service .serv {
+    padding: 25px;
+  }
+  .service .info {
+    padding: 80px 40px;
+  }
+  .news .cards {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  .service .label-head {
+    font-size: var(--h7-size);
+    font-weight: var(--h7-weight);
+  }
+  .service h2 {
+    text-align: center;
+    font-size: var(--h2-size);
+    font-weight: var(--h6-weight);
+    padding: 0 20px;
+  }
+  .service .serv {
+    padding: 25px;
+  }
+  .service .info {
+    padding: 80px 20px;
+  }
+  .news .cards {
+    padding: 30px 10px;
+  }
+}

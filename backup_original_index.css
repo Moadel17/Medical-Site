@@ -1,0 +1,114 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+:root {
+  /* Colors */
+  --main-color: #1f2278;
+  --default-color: #565acf;
+  --low-default-color: #e6e7ff;
+  --hover-color: #f17732;
+  --low-hover-color: #ffe4d5;
+  --bg-color: #f6f6ff;
+  --white: white;
+  --black: black;
+
+  /* Fonts Size */
+  --h1-size: 45px;
+  --h2-size: 35px;
+  --h3-size: 30px;
+  --h4-size: 25px;
+  --h5-size: 20px;
+  --h6-size: 17px;
+  --h7-size: 15px;
+  --p-size: 18px;
+  --a-size: 18px;
+  --icon-size: 20px;
+
+  /* Fonts Weight */
+  --h1-weight: 700;
+  --h2-weight: 700;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 500;
+  --h7-weight: 500;
+  --p-weight: 550;
+  --a-weight: 550;
+
+  /* Transitions */
+
+  --transition-slow: 0.5s ease-in-out;
+  --transition-middle: 0.4s ease-in-out;
+  --transition-fast: 0.3s ease-in-out;
+
+  /* Box Shadow */
+  --box-shadow-small: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  --box-shadow-middle: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  --box-shadow-big: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  --box-shadow-large: 2px 2px 15px 2px rgba(0, 0, 0, 0.2);
+
+  /* Z-Index  */
+  --z-index-1: 1;
+  --z-index-2: 10;
+  --z-index-3: 100;
+  --z-index-4: 1000;
+  --z-index-5: 2000;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.to-top {
+  background-color: var(--default-color);
+  color: var(--white);
+  font-size: var(--p-size);
+  font-weight: var(--p-weight);
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2000;
+  border: 1px solid var(--default-color);
+  outline: none;
+  transition: var(--transition-fast);
+}
+
+.to-top:hover {
+  background-color: transparent;
+  color: var(--default-color);
+}
+
+/* Some Effects CSS */
+
+::selection {
+  background-color: var(--hover-color);
+  color: var(--white);
+}
+
+::-webkit-scrollbar {
+  background-color: var(--low-default-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 20px;
+}
