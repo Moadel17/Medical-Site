@@ -1,20 +1,24 @@
+import one from "../../assets/Photos/Team Photos/member1.jpg";
+import two from "../../assets/Photos/Team Photos/member2.jpg";
+import three from "../../assets/Photos/Team Photos/member3.jpg";
+
 export const doctorsData = [
   {
     name: "DR.Ahmed Mostafa",
     specialty: "جراحة عامة",
-    photo: "../../../public/Photos/Team Photos/member1.jpg",
+    photo: one,
     social: { facebook: "#", twitter: "#", instagram: "#" },
   },
   {
     name: "DR.Laila Smair",
     specialty: "Children",
-    photo: "../../../public/Photos/Team Photos/member2.jpg",
+    photo: two,
     social: { facebook: "#", twitter: "#", instagram: "#" },
   },
   {
     name: "DR.Gamal Hussin",
     specialty: "Heart",
-    photo: "../../../public/Photos/Team Photos/member3.jpg",
+    photo: three,
     social: { facebook: "#", twitter: "#", instagram: "#" },
   },
 ];

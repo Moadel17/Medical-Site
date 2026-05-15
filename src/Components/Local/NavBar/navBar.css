@@ -20,6 +20,7 @@
 
 .contaner #logo {
   width: 300px;
+  cursor: pointer;
 }
 
 /* Labels */
@@ -150,7 +151,7 @@
   position: absolute;
   padding: 20px 40px;
   transform: translateY(0px);
-  background-image: url(/public/Photos/Home\ Photos/background.png);
+  background-image: url(../../../assets/Photos/Home\ Photos/background.png);
   box-shadow: var(--box-shadow-big);
   z-index: 99;
   transition: transform var(--transition-slow);

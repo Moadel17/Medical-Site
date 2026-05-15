@@ -1,4 +1,3 @@
-import { IconsMain } from "../../Local/FloatIcons/IconsFloat";
 import { cards, images } from "./about-box";
 import { motion } from "framer-motion";
 import "./aboutUs.css";
@@ -83,7 +82,6 @@ export const AboutUS = () => {
   return (
     <div className="about-us">
       {left}
-      <IconsMain />
       {right}
     </div>
   );

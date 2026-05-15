@@ -4,6 +4,13 @@ import { FaBedPulse, FaPrescriptionBottleMedical } from "react-icons/fa6";
 import { GiLoveInjection } from "react-icons/gi";
 import { LuAmbulance } from "react-icons/lu";
 
+import one from "../../assets/Photos/News Photos/1.jpg";
+import two from "../../assets/Photos/News Photos/2.jpg";
+import three from "../../assets/Photos/News Photos/3.jpg";
+import M1 from "../../assets/Photos/Team Photos/member1.jpg";
+import M2 from "../../assets/Photos/Team Photos/member2.jpg";
+import M3 from "../../assets/Photos/Team Photos/member3.jpg";
+
 export const serv = [
   {
     id: 1,
@@ -78,24 +85,24 @@ export const Info = [
 export const News = [
   {
     id: 1,
-    img: "../../../public/Photos/News Photos/1.jpg",
-    profile: "../../../public/Photos/Team Photos/member1.jpg",
+    img: one,
+    profile: M1,
     name: "Mohamed Ali",
     date: "18 May 2022",
     label: "In the hospital there are special surgeon",
   },
   {
     id: 2,
-    img: "../../../public/Photos/News Photos/2.jpg",
-    profile: "../../../public/Photos/Team Photos/member2.jpg",
+    img: two,
+    profile: M2,
     name: "Esraa Dawood",
     date: "1 June 2021",
     label: "Dental care for woman are very important",
   },
   {
     id: 3,
-    img: "../../../public/Photos/News Photos/3.jpg",
-    profile: "../../../public/Photos/Team Photos/member3.jpg",
+    img: three,
+    profile: M3,
     name: "Hassan Rady",
     date: "7 July 2022",
     label: "Health will be a thing of past",

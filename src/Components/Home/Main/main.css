@@ -6,7 +6,7 @@
   padding: 0 100px;
   width: 100%;
   height: 100vh;
-  background-image: url(../../../../public/Photos/Home\ Photos/background.png);
+  background-image: url(../../../assets/Photos/Home\ Photos/background.png);
   background-size: cover;
 }
 
@@ -15,7 +15,7 @@
   position: absolute;
   bottom: 0px;
   left: 0;
-  background: url(../../../../public/Photos/Home\ Photos/waves.png) center/cover
+  background: url(../../../assets/Photos/Home\ Photos/waves.png) center/cover
     no-repeat;
   width: 100%;
   height: 300px;

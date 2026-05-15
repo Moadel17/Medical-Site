@@ -1,7 +1,7 @@
 /* ============================= */
 /* Hero Section */
 .hero {
-  background: url("../../../public/Photos/Home\ Photos/background.png")
+  background: url("../../assets/Photos/Home\ Photos/background.png")
     center/cover no-repeat;
   min-height: 60vh;
   display: flex;
@@ -29,7 +29,7 @@
   margin-bottom: 30px;
 }
 
-.hero-text button {
+.hero-text a {
   background-color: var(--hover-color);
   color: var(--white);
   border: 1px solid var(--hover-color);
@@ -39,9 +39,10 @@
   border-radius: 8px;
   cursor: pointer;
   transition: var(--transition-middle);
+  text-decoration: none;
 }
 
-.hero-text button:hover {
+.hero-text a:hover {
   background-color: transparent;
   color: var(--main-color);
 }

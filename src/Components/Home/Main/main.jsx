@@ -1,6 +1,5 @@
 import "./main.css";
-import BackGround from "../../../../public/Photos/Home Photos/doctor.png";
-import { IconsMain } from "../../Local/FloatIcons/IconsFloat";
+import BackGround from "../../../assets/Photos/Home Photos/doctor.png";
 import { motion } from "framer-motion";
 
 export const Main = () => {
@@ -41,7 +40,6 @@ export const Main = () => {
   return (
     <div className="main">
       {MainLeft}
-      <IconsMain />
       {MainRight}
     </div>
   );

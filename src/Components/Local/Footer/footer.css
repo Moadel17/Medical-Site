@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 50px;
-  background: url(/Photos/Home\ Photos/background.png);
+  background: url(../../../assets/Photos/Home\ Photos/background.png);
   margin-top: 100px;
   position: relative;
   row-gap: 30px;

@@ -1,7 +1,7 @@
 import { FaFacebookF, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { doctorsData } from "./box";
 import "./team.css";
-import { IconsFooter, IconsMain } from "../Local/FloatIcons/IconsFloat";
+import { Link } from "react-router-dom";
 
 const DoctorCard = ({ doctor }) => (
   <div className="doctor-card">
@@ -31,20 +31,18 @@ const Teams = () => {
     <div className="app">
       {/* Hero */}
       <section className="hero">
-        <IconsMain />
         <div className="hero-text">
           <h2>We care about your health</h2>
           <p>
             The best medical team with the latest equipment and modern
             technologies
           </p>
-          <button>Book your appointment now</button>
+          <Link>Book your appointment now</Link>
         </div>
       </section>
 
       {/* Team */}
       <section id="team" className="doctors-section">
-        <IconsFooter />
         <h2>Our Doctor Team</h2>
         <div className="doctors-grid">
           {doctorsData.map((doc, idx) => (

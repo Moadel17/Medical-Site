@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Logo from "../../../../public/Photos/Home Photos/logo.png";
+import Logo from "../../../assets/Photos/Home Photos/logo.png";
 import { navBtns } from "./navBar-BOX";
 import { useContext, useRef, useState } from "react";
 import { Window } from "../../../Context/windowWidth";
@@ -16,7 +16,12 @@ export const NavBar = () => {
   const nav = (
     <div className="nav">
       {/* Image */}
-      <img src={Logo} id="logo" alt="" />
+      <img
+        onClick={() => (window.location.pathname = "/")}
+        src={Logo}
+        id="logo"
+        alt=""
+      />
 
       {/* Labels */}
       <div className="labels">

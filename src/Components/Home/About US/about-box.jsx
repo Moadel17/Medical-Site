@@ -2,9 +2,9 @@ import { FaMedkit } from "react-icons/fa";
 import { FaBedPulse } from "react-icons/fa6";
 import { GiLoveInjection } from "react-icons/gi";
 import { LuAmbulance } from "react-icons/lu";
-import one from "/public/Photos/Home Photos/section-about-1.jpg";
-import two from "/public/Photos/Home Photos/section-about-2.jpg";
-import three from "/public/Photos/Home Photos/section-about-3.jpg";
+import one from "../../../assets/Photos/Home Photos/section-about-1.jpg";
+import two from "../../../assets/Photos/Home Photos/section-about-2.jpg";
+import three from "../../../assets/Photos/Home Photos/section-about-3.jpg";
 
 export const images = [
   {

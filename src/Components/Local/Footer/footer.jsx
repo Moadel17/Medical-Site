@@ -1,5 +1,4 @@
 import { BsFillTelephoneFill } from "react-icons/bs";
-import { IconsFooter } from "../FloatIcons/IconsFloat";
 import { Links, Serv } from "./box";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaLinkedin, FaTwitter } from "react-icons/fa";
@@ -74,7 +73,6 @@ export const Footer = () => {
       {links}
       {service}
       {social}
-      {/* <IconsFooter /> */}
       <p className="copy-right">
         Copyright © 2026 Design & Developed by <span>Mohamed Adel</span>
       </p>

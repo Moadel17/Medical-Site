@@ -1,5 +1,5 @@
 import LottieModule from "lottie-react";
-import FormLottie from "/public/Animations/Form.json";
+import FormLottie from "../../../assets/Animations/Form.json";
 import { Inputs } from "./box";
 import { useContext, useState } from "react";
 import { motion } from "framer-motion";
@@ -44,7 +44,7 @@ export const Book = () => {
   );
 
   return (
-    <div className="book-now">
+    <div className="book-now" id="Book">
       {Form} {Animation}
     </div>
   );

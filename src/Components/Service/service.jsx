@@ -2,7 +2,6 @@ import React from "react";
 import { serv, Info, News } from "./box";
 import "./service.css";
 import { img, p } from "framer-motion/client";
-import { IconsFooter, IconsMain } from "../Local/FloatIcons/IconsFloat";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { RiArrowRightSLine } from "react-icons/ri";
@@ -71,9 +70,8 @@ export const Service = () => {
       <p className="label-head">Latest News</p>
       <h2 className="service-title">Our Services</h2>
       {Serv}
-      <IconsMain /> {info}
+      {info}
       {news}
-      {/* <IconsFooter /> */}
     </div>
   );
 };
